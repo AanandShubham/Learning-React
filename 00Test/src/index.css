@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main{
+  width: 100vw;
+  height: 94.5vh ;
+  background-color:rgb(42, 43, 36);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main > #input {
+
+  margin-top: 20px;
+}
+
+#input > input{
+  width: 300px;
+  height: 40px;
+  background-color: rgb(85, 145, 146);
+}
+
+#input > button{
+  width: 50px;
+  height: 40px;
+  background-color: rgb(173, 209, 197);
+}
+
+#todos{
+  width: 350px;
+  margin-top: 30px;
+  /* border: brown dotted 2px; */
+  padding: 5px;
+
+  font-size: 14px;
+  color: rgb(61, 173, 201);
+}
+
+
+
