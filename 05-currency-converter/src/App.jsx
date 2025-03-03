@@ -17,11 +17,7 @@ function App() {
   const currencyTypes = Object.keys(currencyInfo)
 
   const handleConvert = () => {
-    console.log("value : ", cardRef.current.value)
-
     setConvertedAmount(amount * currencyInfo[to])
-
-
   }
 
   const handleSwap = (e) => {
@@ -90,7 +86,7 @@ function App() {
             hover:bg-neutral-700
             hover:text-white 
               text-center'>
-            convert
+            convert {to} to {from}
           </button>
         </div>
       </div>
