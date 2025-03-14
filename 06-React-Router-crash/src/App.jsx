@@ -5,33 +5,35 @@ import Home from "./components/Home/Home"
 import About from "./components/About/About"
 
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <div>
-        <Header />
-        <Home />
-        <Footer />
-      </div>,
-    },
-    {
-      path: "/about",
-      element: <div>
-        <Header />
-        <About />
-        <Footer />
-      </div>,
-    }
-  ]
-);
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
+// const router = createBrowserRouter(
+//   [
+//     {
+//       path: "/",
+//       element: <div>
+//         <Header />
+//         <Home />
+//         <Footer />
+//       </div>,
+//     },
+//     {
+//       path: "/about",
+//       element: <div>
+//         <Header />
+//         <About />
+//         <Footer />
+//       </div>,
+//     }
+//   ]
+// );
 const App = () => {
 
   return (
     <div>
-
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
+      <Header />
+      <Outlet />
+      <Footer />
     </div>
   )
 }

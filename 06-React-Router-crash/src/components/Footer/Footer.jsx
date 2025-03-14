@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <div className='main w-full h-fit p-2 flex justify-around text-white bg-slate-800'>
-                <img className='w-[100px] h-[100px]' src="./public/illuminati_logo.jpg" alt="" />
+                <img className='w-[100px] h-[100px]' src="./illuminati_logo.jpg" alt="" />
 
                 <div className="container  flex  justify-around w-1/3 ">
                     <ul className='first flex flex-col justify-around'>
